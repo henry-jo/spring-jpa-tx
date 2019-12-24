@@ -51,5 +51,9 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    testCompile "com.nhaarman:mockito-kotlin-kt1.1:1.5.0"
+    testCompile "org.jetbrains.kotlin:kotlin-test:${kotlinVersion}"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:${kotlinVersion}"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
 }
