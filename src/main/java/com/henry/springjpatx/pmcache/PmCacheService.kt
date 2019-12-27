@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service
 import javax.transaction.Transactional
 
 @Service
-class PmCacheTestService (
+class PmCacheService (
     private val productItemRepository: ProductItemRepository
 ) {
 
