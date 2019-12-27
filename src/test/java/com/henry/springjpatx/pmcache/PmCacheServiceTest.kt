@@ -34,7 +34,7 @@ class PmCacheServiceTest {
      */
     @Test
     fun test3() {
-        pmCacheService.getProductItemTest3_1()
-        pmCacheService.getProductItemTest3_1()
+        pmCacheService.getProductItemTest3()
+        pmCacheService.getProductItemTest3()
     }
 }
