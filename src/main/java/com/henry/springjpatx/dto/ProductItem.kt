@@ -17,14 +17,14 @@ data class ProductItem (
     val id: Long = 0L,
 
     @Column(name = "amount")
-    val amount: Int = 0,
+    var amount: Int = 0,
 
     @Column(name = "name")
-    val name: String = "",
+    var name: String = "",
 
     @Column(name = "made_by")
-    val madeBy: String = "",
+    var madeBy: String = "",
 
     @Column(name = "created_at")
-    val createdAt: LocalDateTime = LocalDateTime.now()
+    var createdAt: LocalDateTime = LocalDateTime.now()
 )

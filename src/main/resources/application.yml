@@ -15,3 +15,11 @@ spring:
         query:
           plan_cache_max_size: 32
           plan_parameter_metadata_max_size: 64
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction: DEBUG
+        orm:
+          jpa: DEBUG
