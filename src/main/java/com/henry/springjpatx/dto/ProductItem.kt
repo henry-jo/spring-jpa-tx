@@ -3,6 +3,7 @@ package com.henry.springjpatx.dto
 import java.time.LocalDateTime
 import javax.persistence.Column
 import javax.persistence.Entity
+import javax.persistence.EntityListeners
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
@@ -10,6 +11,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "product_item")
+@EntityListeners(ProductItemListener::class)
 data class ProductItem (
 
     @Id

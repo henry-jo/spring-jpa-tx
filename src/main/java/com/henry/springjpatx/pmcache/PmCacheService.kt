@@ -18,9 +18,9 @@ class PmCacheService(
     }
 
     fun getProductItemTest2() {
-        val product1 = productItemRepository.findByName("apple")
+        val product1 = productItemRepository.findAllByName("apple")
         println(product1)
-        val product2 = productItemRepository.findByName("apple")
+        val product2 = productItemRepository.findAllByName("apple")
         println(product2)
     }
 

@@ -40,7 +40,7 @@ class DelayWriteService(
 
     fun test5() {
         productItemRepository.save(ProductItem(name = "bananana", madeBy = "itner"))
-        val product = productItemRepository.findByName("bananana")
+        val product = productItemRepository.findAllByName("bananana")
         println(product)
     }
 
@@ -52,7 +52,7 @@ class DelayWriteService(
         println("update query not working")
         productItemRepository.save(productItem)
 
-        val productItem1 = productItemRepository.findByName("bananana")
+        val productItem1 = productItemRepository.findAllByName("bananana")
         println(productItem1)
     }
 
