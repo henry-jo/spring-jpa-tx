@@ -44,4 +44,9 @@ class DelayWriteController(
     fun test7() {
         delayWriteService.test7()
     }
+
+    @GetMapping("/test8")
+    fun test8() {
+        delayWriteService.test8()
+    }
 }

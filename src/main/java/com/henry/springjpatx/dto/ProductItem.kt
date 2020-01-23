@@ -25,8 +25,8 @@ data class ProductItem (
     var name: String = "",
 
     @Column(name = "made_by")
-    var madeBy: String = "",
+    var madeBy: String = ""
 
-    @Column(name = "created_at")
-    var createdAt: LocalDateTime = LocalDateTime.now()
+//    @Column(name = "created_at")
+//    var createdAt: LocalDateTime = LocalDateTime.now()
 )

@@ -30,8 +30,18 @@ class DirtyCheckingController(
         dirtyCheckingService.test4()
     }
 
+    @GetMapping("/test4-1")
+    fun test4_1() {
+        dirtyCheckingService.test4_1()
+    }
+
     @GetMapping("/test5")
     fun test5() {
         dirtyCheckingService.test5()
+    }
+
+    @GetMapping("/test6")
+    fun test6() {
+        dirtyCheckingService.test6()
     }
 }
