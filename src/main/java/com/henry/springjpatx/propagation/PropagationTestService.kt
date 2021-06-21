@@ -32,4 +32,18 @@ class PropagationTestService(
 
         // 부모 tx -> 자식 tx -> 부모 tx (exception 발생) : 자식 tx는 커밋되고 부모만 롤백
     }
+
+    fun propagationTest3() {
+        val fruit = fruitInfoRepository.findById(4).orElse(null)
+        propagationTestService2.childRequiresNewTxChange(fruit)
+
+        println("parent tx end !")
+    }
+
+    fun propagationTest4() {
+        val fruit = fruitInfoRepository.findById(4).orElse(null)
+        propagationTestService2.childRequiresNewTxSave(fruit)
+
+        println("parent tx end !")
+    }
 }

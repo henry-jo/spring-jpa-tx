@@ -27,4 +27,17 @@ class PropagationTestService2(
         println("child tx start !")
         fruitInfoRepository.save(FruitInfo(name = "apple"))
     }
+
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    fun childRequiresNewTxChange(fruitInfo: FruitInfo) {
+        println("child tx start !")
+        fruitInfo.name = "banananchange"
+    }
+
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    fun childRequiresNewTxSave(fruitInfo: FruitInfo) {
+        println("child tx start !")
+        fruitInfo.name = "banananchangeqwe"
+        fruitInfoRepository.saveAndFlush(fruitInfo)
+    }
 }

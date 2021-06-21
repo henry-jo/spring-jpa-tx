@@ -18,4 +18,14 @@ class PropagationController(
     fun test2() {
         propagationTestService.propagationTest2()
     }
+
+    @GetMapping("/test3")
+    fun test3() {
+        propagationTestService.propagationTest3()
+    }
+
+    @GetMapping("/test4")
+    fun test4() {
+        propagationTestService.propagationTest4()
+    }
 }
